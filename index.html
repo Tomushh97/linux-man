@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Linux man page</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-nav my-lg-0 navbar-nav-scroll sticky-top navbar-expand-xxl navbar-dark bg-secondary"
+        style="--bs-scroll-height: 125px;">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">ls(1) — Linux manual page</a>
+            <div class="navbar-nav collapse navbar-collapse d-flex justify-content-end align-items-center">
+                <a class="nav-link" href="#name">Name</a>
+                <a class="nav-link" href="#synopsis">Synopsis</a>
+                <a class="nav-link" href="#description">Description</a>
+                <a class="nav-link" href="#author">Author</a>
+                <a class="nav-link" href="#reporting-bugs">Reporting bugs</a>
+                <a class="nav-link" href="#copyright">Copyright</a>
+                <a class="nav-link" href="#see-also">See also</a>
+                <a class="nav-link" href="#colophon">Colophon</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <h5 id="name">Name</h5>
+                <p>ls - list directory contents</p>
+            </div>
+            <div class="row">
+                <h5 id="synopsis">Synopsis</h5>
+                <p>ls [<i class="greenItalic">OPTION</i>]... [<i class="greenItalic">FILE</i>]...</p>
+            </div>
+            <div class="row">
+                <h5 id="description">Description</h5>
+                <p>List information about the FILEs (the current directory by
+                    default). Sort entries alphabetically if none of <strong>-cftuvSUX</strong> nor
+                    <strong>--sort</strong> is specified.
+
+                    Mandatory arguments to long options are mandatory for short
+                    options too.
+                </p>
+                <p><strong>-a, --all</strong>
+                <p class="description">do not ignore entries starting with .</p>
+                </p>
+                <p>
+                    <strong>-A, --almost-all</strong>
+                <p class="description">do not list implied . and ..</p>
+                </p>
+                <p>
+                    <strong>--author</strong>
+                <p class="description">with <strong>-l</strong>, print the author of each file</p>
+                </p>
+                <p>
+                    <strong>-b, --escape</strong>
+                <p class="description">print C-style escapes for nongraphic characters</p>
+                </p>
+                <p>
+                    <strong>--block-size=<i class="greenItalic">SIZE</i></strong>
+                <p class="description">with <strong>-l</strong>, scale sizes by SIZE when printing them; e.g.,
+                    '--block-size=M'; see SIZE
+                    format below</p>
+                </p>
+                <p>
+                    <strong>- -B, --ignore-backups</strong>
+                <p class="description">do not list implied entries ending with ~</p>
+                </p>
+                <p>
+                    <strong>-c</strong>
+                <p class="description">with <strong>-lt:</strong> sort by, and show, ctime (time of last
+                    modification of file status information); with -l: show
+                    ctime and sort by name; otherwise: sort by ctime, newest
+                    first</p>
+                </p>
+                <p>
+                    <strong>-C</strong>
+                <p class="description">list entries by columns</p>
+                </p>
+                <p>
+                    <strong>--color</strong>=[<i class="greenItalic">WHEN</i>]
+                <p class="description">colorize the output; WHEN can be 'always' (default if omitted), 'auto', or
+                    'never'; more info below</p>
+                </p>
+                <p>
+                    <strong>-d, --directory</strong>
+                <p class="description">list directories themselves, not their contents</p>
+                </p>
+                <p>
+                    <strong>-D, --dired</strong>
+                <p class="description">generate output designed for Emacs' dired mode</p>
+                </p>
+                <p>
+                    <strong>-f</strong>
+                <p class="description">do not sort, enable <strong>-aU</strong>>, disable <strong>-ls --color</strong>
+                </p>
+                <p>
+                    <strong>-F, --classify</strong>
+                <p class="description">append indicator (one of */=>@|) to entries
+                </p>
+                <p>
+                    <strong>--file-type</strong>
+                <p class="description">likewise, except do not append '*'
+                </p>
+                <p>
+                    <strong>--format</strong>=<i class="greenItalic">WORD</i>
+                <p class="description">across <strong>-x</strong>, commas <strong>-m</strong>, horizontal
+                    <strong>-x</strong>, long <strong>-l</strong>,
+                    single-column <strong>-1</strong>, verbose <strong>-l</strong>, vertical <strong>-C</strong>
+                </p>
+                <p>
+                    and so on...
+                </p>
+            </div>
+            <div class="row">
+                <h5 id="author">Author</h5>
+                <p>Written by Richard M. Stallman and David MacKenzie.
+                </p>
+            </div>
+            <div class="row">
+                <h5 id="reporting-bugs">Reporting bugs</h5>
+                <p>GNU coreutils online help:
+                    <a class="link" href="https://www.gnu.org/software/coreutils">
+                        https://www.gnu.org/software/coreutils
+                    </a>
+                <p>Report any translation bugs to
+                    <a class="link" href="https://translationproject.org/team">
+                        https://translationproject.org/team
+                    </a>
+                </p>
+                </p>
+            </div>
+            <div class="row">
+                <h5 id="copyright">Copyright</h5>
+                <p>Copyright © 2020 Free Software Foundation, Inc. License GPLv3+:
+                    GNU GPL version 3 or later <a class="link"
+                        href="https://gnu.org/licenses/gpl.html">https://gnu.org/licenses/gpl.html</a>.
+                    This is free software: you are free to change and redistribute
+                    it. There is NO WARRANTY, to the extent permitted by law.
+                </p>
+            </div>
+            <div class="row">
+                <h5 id="see-also">See also</h5>
+                <p>Full documentation <a class="link"
+                        href="https://www.gnu.org/software/coreutils/ls">https://www.gnu.org/software/coreutils/ls</a>
+                    or available locally via: info '(coreutils) ls invocation'
+                </p>
+            </div>
+            <div class="row">
+                <h5 id="colophon">Colophon</h5>
+                <p>This page is part of the coreutils (basic file, shell and text
+                    manipulation utilities) project. Information about the project
+                    can be found at ⟨<a class="link"
+                        href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>⟩. If
+                    you
+                    have a bug report for this manual page, see
+                    ⟨<a class="link"
+                        href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>⟩. This
+                    page was obtained
+                    from the tarball coreutils-8.32.tar.xz fetched from
+                    ⟨<a class="link" href="http://ftp.gnu.org/gnu/coreutils/">http://ftp.gnu.org/gnu/coreutils/</a>⟩ on
+                    2021-08-27. If you
+                    discover any rendering problems in this HTML version of the page,
+                    or you believe there is a better or more up-to-date source for
+                    the page, or you have corrections or improvements to the
+                    information in this COLOPHON (which is not part of the original
+                    manual page), send a mail to man-pages@man7.org.
+                </p>
+            </div>
+            <span><a href="#name"><i class="bi bi-arrow-up-circle-fill"></i></a></span>
+        </div>
+        <footer class="bg-secondary text-center text-white text-lg-start">
+            <div class="text-center p-3">
+                © 2022 Copyright:
+                <a class="text-white" href="https://www.man7.org/linux/man-pages/">man7.org/linux</a>
+            </div>
+        </footer>
+</body>
+
+</html>
